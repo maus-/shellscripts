@@ -2,6 +2,7 @@
 # Stream audio using just ssh & mpg123
 # more or less the poor mans airplay ;P
 # I'm sure this could be improved on.
+#
 # Example Use:
 # ./playlist.sh /path/to/audio/files
 RHOST='192.168.1.121'
