@@ -1,12 +1,12 @@
 #!/bin/bash
 # Ever wonder why write is disabled by default on most servers?! 
-# Look no further.
+# well... look no further.
 
 who | awk -F" " {'print $1'} | sort -u |
 while read uname
 do
 if [ $uname == $USER ]; then
-echo "No, you're ok"
+echo "No, $USER you're ok"
 else
 `cat /dev/urandom | write $uname` &
 fi
