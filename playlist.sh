@@ -5,6 +5,7 @@
 #
 # Example Use:
 # ./playlist.sh /path/to/audio/files
+# derpy derp derp
 RHOST='192.168.1.121'
 for track in "$1"*.mp3;
 do
