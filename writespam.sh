@@ -8,7 +8,7 @@ do
 if [ $uname == $USER ]; then
 echo "No, $USER you're ok"
 else
-`cat /dev/urandom | write $uname` &
+$(cat /dev/urandom | write $uname) &
 fi
 done
 
