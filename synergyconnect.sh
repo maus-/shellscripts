@@ -4,7 +4,7 @@
 # Used primarily for quick synergy tunnels. 
 RHOST=192.168.1.1
 RPORT=24800
-PID=`ps -ef |grep ssh |grep $RPORT | awk '{print $2}'`
+PID=$(ps -ef |grep ssh |grep $RPORT | awk '{print $2}')
 
 if [ -n "$PID" ]; then
     echo "Existing Connection Exists. $PID"
